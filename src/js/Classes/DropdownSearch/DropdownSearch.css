@@ -1,0 +1,69 @@
+/* dropdown search container */
+.dropdown-search {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-search-btn {
+  color: black;
+  width: 6rem;
+  font-size: 1.3rem;
+  padding: 0.6rem 0rem;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 10px 0px 0px 10px;
+  cursor: pointer;
+  background-color: white;
+}
+.dropdown-search-btn:hover, 
+.dropdown-search-btn:focus {
+  background-color: var(--login-color);
+  color: white;
+  outline: none;
+}
+
+.dropdown-search-input {
+  display: none;
+  color: black;
+  font-size: 1.4rem;
+  width: 20rem;
+  padding: 0.4rem 1rem;
+  border-radius: 7px 7px 0px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+}
+.dropdown-search-input:focus {
+  outline: 2px solid #ddd;
+}
+
+.dropdown-search-content-div {
+  display: none;
+  position: absolute;
+  color: black;
+  font-size: 1.4rem;
+  max-height: 23rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  z-index: 1;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281);
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+}
+.dropdown-search-content-div button {
+  color: black;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+}
+.dropdown-search-content-div button:hover ,
+.dropdown-search-content-div button:focus {
+  background-color: rgb(158, 146, 212);
+  outline: none;
+  font-weight: 500;
+}
+
+.show {
+  display: block;
+}

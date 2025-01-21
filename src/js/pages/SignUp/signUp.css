@@ -1,0 +1,288 @@
+/* @font-face {
+    font-family: adrip;
+    src: url(../fonts/adrip1.woff2);
+    font-weight: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: typo;
+    src: url(../fonts/typo.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat-regular.woff2);
+    font-display: swap;
+} */
+#sign-up {
+  position: relative;
+  width: 100%;
+  grid-template-columns: 1fr 2.3fr;
+  display: grid;
+}
+#sign-up-left-banner {
+  background-image: url('./img/circuit.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  width: 100%;
+  /* height: 100%; */
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.288);
+  z-index: 5;
+}
+#sign-up-left-banner-strip {
+  position: sticky;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  top: 50vh;
+  transform: translateY(-40%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+/* #odin-logo {
+  height: 10rem;
+  width: auto;
+  margin: 2rem 0rem 2rem 3rem;
+} */
+#sign-up-left-banner-strip h1 {
+  font-family: poppins, system-ui, sans-serif;
+  font-size: clamp(7rem, (1rem + 10vw), 7rem);
+  color: var(--red);
+  text-align: center;
+  font-weight: 400;
+  margin-right: 3rem;
+  text-shadow: 2.5px 2.5px 2px #250a0ac9;
+}
+
+/* wrap text after 66 characters to improve readability */
+/* #sign-up .content p {
+  width: clamp(45ch, 80vw, 75ch);
+  margin: 0px auto;
+  max-inline-size: clamp(45ch, 70ch, 75ch);
+  padding: 5px 50px;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  text-indent: 3ch;
+} */
+
+#sign-up-main-container {
+  width: 100%;
+  position: relative;
+}
+#sign-up-main-info-top {
+  padding: 4.5rem 15rem 4.5rem 4.5rem;
+  line-height: 1.8;
+  width: 100%;
+  background-color: #e5f1ff;
+  color: rgb(79, 81, 99);
+}
+#sign-up-main-info-top h2 {
+  font-family: poppins, sans-serif;
+  font-size: 2.1rem;
+  text-wrap: pretty;
+  font-weight: 600;
+}
+
+#sign-up-main-info {
+  background-color: #f6f9fd;
+}
+#sign-up-main-info h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  padding: 3.2rem 0rem 2.7rem 3rem;
+  color: rgb(64, 54, 87);
+}
+#sign-up .form-row {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#sign-up .form-input {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#sign-up .left {
+  margin-left: 7%;
+  margin-right: 3.5%;
+}
+#sign-up .right {
+  margin-left: 3.5%;
+  margin-right: 7%;
+}
+#sign-up label {
+  color: rgb(64, 54, 87);
+  display: block;
+  width: 100%;
+  margin-bottom: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#sign-up .sign-up-input {
+  position: relative;
+  width: 100%;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.151);
+}
+#sign-up .sign-up-input:focus {
+  outline: 2px solid rgba(0, 0, 255, 0.589);
+}
+#sign-up .form-error-msg {
+  color: var(--red);
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: absolute;
+  top: 6.4rem;
+  right: 0rem;
+}
+#sign-up #sign-up-phone {
+  padding-left: 7rem;
+}
+#countryCodesDiv {
+  position: absolute;
+  top: 2.5rem;
+  left: 0rem;
+  z-index: 2000;
+  /* box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.151); */
+}
+
+.password-instructions {
+  position: relative;
+  top: -1.7rem;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  color: black;
+  font-size: 1.4rem;
+}
+
+#sign-up .invalid {
+  outline: 2px solid var(--red);
+}
+
+
+/* #sign-up .sign-up-input:valid {
+  outline: 2px solid rgb(0, 139, 133);
+  box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.24);
+} */
+
+#sign-up-submit-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sign-up-submit-btn {
+  margin: 1.5rem 0rem 3.5rem 0rem;
+  width: 170px;
+  padding: 0.6rem 3rem;
+  outline: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+  box-shadow: 3px 3px 5px black;
+  background-color: var(--login-color);
+  color: rgb(255, 255, 255);
+}
+#sign-up-submit-btn:hover,
+#sign-up-submit-btn:focus {
+  font-weight: 600;
+  box-shadow: 5px 5px 7px black;
+}
+
+
+
+
+
+
+#sign-up #main-info-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4.5rem;
+  background-color: #b4c0d4;
+}
+#sign-up .login {
+  color: black;
+  font-family: poppins, sans-serif;
+  font-size: 1.6rem;
+  
+}
+#sign-up #sign-up-login {
+  color: black;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+#sign-up #sign-up-login:hover,
+#sign-up #sign-up-login:focus {
+  color: blue;
+  font-weight: 600;
+}
+
+#login-show-password-btn-1,
+#login-show-password-btn-2 {
+  position: absolute;
+  bottom: 3.5rem;
+  /* right: -343px; */
+  right: 31px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  z-index: 20;
+}
+.login-show {
+  background-image: url('./img/show.svg');
+}
+.login-hide {
+  background-image: url('./img/hide.svg');
+}
+#login-show-password-btn-1:focus,
+#login-show-password-btn-2:focus {
+  outline: none;
+}
+
+.sign-up-check {
+  display: none;
+  position: absolute;
+  bottom: 3.5rem;
+  /* right: -343px; */
+  right: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  z-index: 20;
+  background-image: url('./img/check.svg');
+}
+
+.sign-up-check-show {
+  display: block;
+}
+
+.sign-up-check-hide {
+  display: none;
+}
+
+
+
+/* 
+ - begin refactor of SignUp.js
+ - sort countries list alphabetically
+ - Add events to close DropdownSearch on click away or escape press
+ - Focus search box on open of DDSearch
+ - Refactor DDSearch html to stick search box to the top of the list
+
+*/
