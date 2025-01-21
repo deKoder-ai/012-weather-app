@@ -10,3 +10,6 @@ npm run deploy | check this on odin
 
 read more on webpack merge:
 https://webpack.js.org/guides/production/
+
+SS3NAEGN7NVCHG3XAF38UDC6W
+https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?key=11111111111111111

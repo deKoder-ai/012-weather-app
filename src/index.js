@@ -7,6 +7,7 @@ import { ss } from './js/siteSettings.js';
 import { NavigationBar } from './js/NavigationBar/NavigationBar.js';
 import { Routing } from './js/Routing.js';
 import { NavSwitch } from './js/pages/Login/switchNavBar.js';
+import { getWeather } from './js/pages/Weather/fetch.js';
 
 import { DevTools } from './js/Functions.js';
 
@@ -51,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(ss.get('x'));
   ss.set('x', 456);
   console.log(ss.get('x'));
+
+  getWeather();
 
   // temp code to handle login status by monitoring for changes in a div
 
