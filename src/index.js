@@ -7,7 +7,7 @@ import { ss } from './js/siteSettings.js';
 import { NavigationBar } from './js/NavigationBar/NavigationBar.js';
 import { Routing } from './js/Routing.js';
 import { NavSwitch } from './js/pages/Login/switchNavBar.js';
-import { getWeather } from './js/pages/Weather/fetch.js';
+import { fetchFromApi } from './js/pages/Weather/fetch.js';
 
 import { DevTools } from './js/Functions.js';
 
@@ -20,10 +20,9 @@ import { ImageArray } from './js/Classes/Slideshow/ImageArray.js';
 import { Dropdown } from './js/Dropdown/Dropdown.js';
 import { Settings } from './js/Dropdown/Settings.js';
 
-
 // dev
 const dt = new DevTools(1);
-dt.addOutlineToAllElements(0);
+dt.addOutlineToAllElements(0, 1, 'dashed', '#0000ff33');
 dt.logClicks(0, 123);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -48,12 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // handle events
   const routing = new Routing(content, false);
 
-
   console.log(ss.get('x'));
   ss.set('x', 456);
   console.log(ss.get('x'));
 
-  getWeather();
 
   // temp code to handle login status by monitoring for changes in a div
 

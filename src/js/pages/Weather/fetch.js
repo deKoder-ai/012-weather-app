@@ -1,15 +1,27 @@
 'use strict';
 
-const key = 'SS3NAEGN7NVCHG3XAF38UDC6W';
-const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?key=${key}`;
-getWeather = () => {
-  fetch('https://url.com/some/url')
-    .then(function (response) {
-      console.log(response);
+class fetchFromApi {
+  constructor(url, key, search) {
+    this.url = url;
+    this.key = key;
+    this.search = search;
+    this.request = `${url}${key}${search}`;
+    return this;
+  }
+  fetchData = () => {
+    fetch(this.request, {
+      mode: 'cors',
     })
-    .catch(function (err) {
-      console.log(err);
-    });
-};
+      .then(function (response) {
+        return response.json();
+      })
+      // .then(function (response) {
+      //   console.log(response);
+      // })
+      .catch(function (err) {
+        console.log(err);
+      });
+  };
+}
 
-export { getWeather };
+export { fetchFromApi };

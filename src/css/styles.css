@@ -8,9 +8,17 @@
   --nav-bar-height: 5rem;
   --text-col: white;
   --red: #9e2828;
-  --green: #228B22;
+  --green: rgb(34, 139, 34);
+  --blue: #335291;
   /* #32CD32 */
 }
+/* '#228B22',
+'#F6AE2D',
+'F58A07',
+'#9e2828',
+'#3A2449',
+'#071E22' */
+
 html {
   color: var(--text-col);
   font-family: poppins, Verdana, sans-serif;

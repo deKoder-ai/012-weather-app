@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+  width="64" 
+  height="64" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="#335291" 
+  stroke-width="1.2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round" 
+  class="feather feather-arrow-up">
+  <line x1="12" y1="20" x2="12" y2="6"></line>
+  <polyline points="8 9 12 5 16 9"></polyline>
+</svg>

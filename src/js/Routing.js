@@ -3,6 +3,7 @@ import { Home } from './pages/Home.js';
 import { SignUp } from './pages/SignUp/SignUp.js';
 import { Login } from './pages/Login/Login.js';
 import { NavSwitch } from './pages/Login/switchNavBar.js';
+import { GiphyImage } from './Classes/GiphyImage.js'
 
 class Routing {
   constructor(content, logging) {
@@ -25,14 +26,15 @@ class Routing {
       switch (target.id) {
         case 'home-btn':
           const home = new Home(content);
-          content.appendChild(home);
+          // content.appendChild(home);
         case 'nav-bar-about':
         case 'dropdown-item-1':
           console.log('About');
           break;
-        case 'nav-bar-2':
+        case 'nav-bar-giphy':
         case 'dropdown-item-2':
-          console.log('Nav Link 2');
+          this.content.innerHTML = '';
+          this.content.appendChild(new GiphyImage(10, true, true));
           break;
         case 'nav-bar-login':
         case 'dropdown-item-3':

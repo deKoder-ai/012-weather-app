@@ -12,7 +12,7 @@ class NavSwitch {
   }
   logOut = () => {
     this.removeHeader();
-    const navBtns = ['Home', 'About', 'Login', 'Sign Up'];
+    const navBtns = ['Home', 'Giphy', 'Login', 'Sign Up'];
     const navBar = new NavigationBar(5, navBtns, false, this.baseFontSize);
     page.appendChild(navBar);
   };

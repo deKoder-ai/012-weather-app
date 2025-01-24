@@ -1,0 +1,107 @@
+<div id="weather">
+  <div class="weather-grid-container">
+    <div class="weather-column-1">
+      <div class="relative">
+        <label for="weather-location">LOCATION:</label>
+        <input type="text"
+          name="weather-location"
+          id="weather-location"
+          placeholder="Enter a location...">
+      </div>
+      <div id="map">
+        <div id="aqi-toggle-div">
+          <div class="flex-left">
+            <label for="aqi-toggle">AQI:</label>
+            <input
+              type="checkbox"
+              id="aqi-toggle"
+              name="aqi-toggle"
+              class="flex-left"
+              checked >
+          </div>
+        </div>
+        <div id="long-lat">
+          <div id="lat">
+            <p id="latitude">LATITUDE</p>
+          </div>
+          <div id="long">
+            <p id="longitude">LONGITUDE</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="a-1" class="flex">
+        <h2 id="location"></h2>
+      </div>
+    </div>
+    
+    <div class="weather-column-2">
+      <p id="conditions"></p>
+      <div id="b-1" class="flex container unit">
+        <div id="weather-icon" class="container flex">
+          <div id="weather-icon-bcg" class="clear-day"></div>
+          <p id="humidity"></p>
+          <p id="uv-index-text">UV INDEX</p>
+          <p id="uv-index-na">0</p>
+          <div id="uv-index" class="uv-index-1"></div>
+        </div>
+        <div id="b-2">
+          <p id="temp" class="container"></p>
+          <p id="feels-like"></p>
+          <div id="thermometer" class="cooler"></div>
+        </div>
+      </div>
+      
+      <div class="flex unit">
+        <div id="wind-info">
+          <table>
+            <tr>
+              <td class="col-1">Wind Speed:</td>
+              <td id="windspeed" class="col-2"></td>
+            </tr>
+            <tr>
+              <td class="col-1">Wind Direction:</td>
+              <td id="winddir" class="col-2"></td>
+            </tr>
+            <tr>
+              <td class="col-1">Pressure:</td>
+              <td id="pressure" class="col-2"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="wind-container" class="flex">
+          <div id="beaufort-icon"></div>
+          <p id="beaufort-force-text"></p>
+          <div id="wind-direction-container" class="flex">
+            <div id="compass"></div>
+            <img src="../../../img/arrow-up.svg"
+              alt="wind direction pointer"
+              id="wind-direction-1">
+            <img src="../../../img/arrow-up-outline.svg"
+              alt="wind direction pointer"
+              id="wind-direction-2">
+              <div id="wind-dir-center"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+    <div class="weather-column-3">
+      <div id="sunrise-set-div">
+        <div class="flex">
+          <img src="../../../img/weather/sunset.svg"
+            alt="sunset icon"
+            id="sunrise-set-icon">
+        </div>
+        <p id="sunrise-set-text"></p>
+      </div>
+      <div id="city-aqi-container">
+
+      </div>
+      
+    </div>
+  </div>
+</div>
